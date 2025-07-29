@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url('/bg.png') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+
+.chatbot-container {
+    max-width: 700px;
+    margin: 40px auto;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .chatbot-header {
+    font-size: 40px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    color: #f7f7f7;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .chatbox-wrapper {
+    background-color: #f4f7fb;
+    border: 1px solid #cfd9e4;
+    border-radius: 12px;
+    padding: 16px;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+  }
+  
+  .chat-history {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding-right: 8px;
+    margin-bottom: 12px;
+  }
+  
+  /* Message Wrapper for alignment */
+  .message-wrapper {
+    display: flex;
+    margin-bottom: 6px;
+  }
+  
+  .message-wrapper.left {
+    justify-content: flex-start;
+  }
+  
+  .message-wrapper.right {
+    justify-content: flex-end;
+  }
+  
+  /* Chat Bubbles */
+  .message {
+    max-width: 70%;
+    padding: 12px 16px;
+    border-radius: 20px;
+    font-size: 15px;
+    line-height: 1.4;
+    word-wrap: break-word;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  }
+  
+  .message.user {
+    background-color: #2979ff;
+    color: white;
+    border-bottom-right-radius: 4px;
+  }
+  
+  .message.bot {
+    background-color: #e6e6e6;
+    color: #333;
+    border-bottom-left-radius: 4px;
+  }
+  
+  .typing {
+    font-style: italic;
+    color: gray;
+    margin: 5px 0;
+  }
+  
+  .input-area {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .input-area input {
+    flex: 1;
+    padding: 10px 12px;
+    border-radius: 8px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+  }
+  
+  .input-area button {
+    padding: 10px 16px;
+    background-color: #2979ff;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .input-area button:hover {
+    background-color: #1866e3;
+  }
+  
+  .input-area button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
